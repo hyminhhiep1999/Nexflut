@@ -1,0 +1,60 @@
+.header{
+    background: rgba(6,6,6,0.9);
+    a{
+        color: #fff !important;
+        &:hover{
+            color: orange !important;
+        }
+    }
+    .btn-toggle{
+        color: #fff !important;
+        border: 1px solid #fff !important;
+        border-radius: .25rem;
+        &:hover{
+            color: orange !important;
+        }
+    }
+    .logoHeader{
+        width: 118px;
+    }
+    .searchbar{
+        position: relative;
+        .search_input{
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            bottom: -38px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all .5s;
+            width: 0;
+            &:focus{
+                visibility: visible;
+                opacity: 1;
+                width: 240px;
+            }
+        }
+        &:hover {
+            .search_input{
+                visibility: visible;
+                opacity: 1;
+                width: 240px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+
+        .searchbar{
+            &:hover {
+                .search_input{
+                    width: 340px !important;
+                }
+            }
+            .search_input:focus{
+                width: 340px !important;
+            }
+        }
+    
+}

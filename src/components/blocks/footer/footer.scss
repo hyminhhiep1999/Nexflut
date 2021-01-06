@@ -1,0 +1,70 @@
+$blue-footer: 	rgba(6,6,6,0.9);
+$white-footer: #fff;
+.footer-forall {
+    $range-footer: 20px;
+
+    padding-top: $range-footer;
+    background:	rgba(6,6,6,0.9);
+    color: $white-footer;
+    .imageLogoFooter{
+        img{
+            width: 125px;
+            margin-left:20px;
+            margin-bottom: 20px;
+        }
+    }
+    .type_protype{
+        font-size: 12px;
+        color: #fff;
+        .list{
+            li{
+                list-style-type: none;
+                padding-top: 10px;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    
+                }:hover{
+                    color: red;
+                }
+            }
+        }
+
+    }
+    .facebookIcon{
+        i{
+            margin-left: 180px;
+            font-size: 35px;
+            color: #fff;
+        }:hover{
+            color: red;
+            font-size: 37px;
+        }
+
+        
+    }
+    .app-footer {
+        font-size: $range-footer + 10px;
+        padding-top: $range-footer - 10px;
+        position: relative;
+        img{
+            width: 10%;
+        }
+    }
+    .app-footer::before {
+        position: absolute;
+        content: '';
+        //left: calc(10% + 15px);
+        top: 60%;
+        width: 100%;
+        border: 0.001px solid #424242;
+    }
+    
+}
+//hinh anh logo 
+.img-responsive{
+    width: 200%;
+    // height: 200%;
+}
+// @media (min-width: 576px) { 
+//  }

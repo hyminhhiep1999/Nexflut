@@ -1,0 +1,216 @@
+    .content{
+    background: #111;
+    padding: 50px 0;
+    .header-fiml{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0 50px;
+        .fiml-genre{
+            display: flex;
+            .fiml{
+                a{
+                    font-size: 19px;
+                    color: #999;
+                    text-decoration: none;
+                    font-weight: 700;
+                    transition: all .3s;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+            span{
+                margin: 0 7px;
+                color: #999;
+                line-height: 30px;
+            }
+            .genre{
+                font-size: 19px;
+                color: #999;
+                font-weight: 700;
+            }
+        }
+        .filter-movies{
+            display: flex;
+            .filter{
+                position: relative;
+                &::after{
+                    content: '\f0dd';
+                    font-family: 'Font Awesome 5 Free';
+                    color: #fff;
+                    position: absolute;
+                    right: 30px;
+                    top: 5px;
+                    font-weight: 900;
+                }
+                select{
+                    
+                    position: relative;
+                    margin-right: 20px;
+                    border: 1px #fff solid;
+                    background: #1111;
+                    color: #fff;
+                    width: 180px;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    option{
+                        color: #fff;
+                        transition: all .3s;
+                        background: #111;
+                        padding-bottom: 20px;
+                        &:hover{
+                            color: sienna;
+                        }
+                        &:focus{
+                            background: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .list-fiml{
+        .row{
+            .col-md-2{
+                position: relative;
+                overflow: hidden;
+                margin-bottom: 20px;
+                &:hover{
+                    .banner-fiml a img{
+                        transform: scale(1.05);
+                    } 
+                }
+                &:hover{
+                    .content-fiml{
+                        display: unset;
+                    }
+                }
+                &:hover{
+                    .title-fiml{
+                        display: none;
+                    }
+                }
+                .banner-fiml{
+                    overflow: hidden;
+                    a{
+                        img{
+                            width: 100%;
+                            transition: all .5s;
+                            opacity: .6;
+                            height: 245px;
+                        }
+                    }
+                }
+                .title-fiml{
+                    position: absolute;
+                    bottom: 0;
+                    left: 20px;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+                }
+                .content-fiml{
+                    position: absolute;
+                    bottom: -5%;
+                    display: none;
+                    .btn-seen{
+                        position: absolute;
+                        top: -60%;
+                        left: 50%;
+                        margin-left: -20px;
+                        a{
+                        text-align: center;
+                        &:hover{
+                            i{
+                                background: transparent;
+                                color: #f7941e;
+                                border: #fff 2px solid;
+                            }
+                        }
+                            i{
+                                color: #999;
+                                border-radius: 50%;
+                                width: 40px;
+                                height: 40px;
+                                font-size: 15px;
+                                line-height: 37px;
+                                border: 2px solid #999;
+                                transition: all .3s;
+
+                            }
+                        }
+                    }
+                    .des-fiml{
+                        .title{
+                            a{
+                                text-decoration: none;
+                                margin-left: 5px;
+                                color: #fff;
+                                font-weight: 600;
+                                opacity: .9;
+                                transition: all .3s;
+                                &:hover{
+                                    color: #f7941e;
+                                }
+                            }
+                        }
+                        .quality-score{
+                            opacity: .8;
+                            margin: 2px 0 1px 5px;
+                            display: flex;
+                            // align-items: center;
+                            .quality{
+                                display: flex;
+                                margin: 0 10px 0 0;
+                                .star{
+                                    margin-right: 3px;
+                                    line-height: 17px;
+                                    i{
+                                        color: #999;
+                                        // opacity: .8;
+                                        font-size: 13px;
+                                    }
+                                }
+                                .point{
+                                    font-size: 15px;
+                                    color: #fff;
+                                    font-weight: 600;
+                                }
+                            }
+                            .old{
+                                line-height: 12px;
+                                img{
+                                    width: 32px;
+                                    height: 18px;
+                                }
+                            }
+                            .episode-number{
+                                margin-left: 10px;
+                                font-size: 15px;
+                                font-weight: 600;
+                                color: #fff;
+                                .episode{
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+                        .introduced{
+                            margin-left: 5px;
+                            width: 150px;
+                            p{
+                                font-size: 12px;
+                                color: #fff;
+                                opacity: .7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

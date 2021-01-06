@@ -1,0 +1,34 @@
+.video-item {
+  height: 200px;
+  width: 355px;
+  cursor: pointer;
+  position: relative;
+}
+
+.video-item img {
+  position: absolute;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  width: 100%;
+  height: 100%;
+}
+
+.video-item video {
+  position: absolute;
+  z-index: -99999999;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  height: 100%;
+  width: 100%;
+}
+
+.video-item:hover img {
+  z-index: -99999999;
+  opacity: 0;
+}
+
+.video-item:hover video {
+  opacity: 1;
+  z-index: 99999999;
+}
+/*# sourceMappingURL=style.css.map */
